@@ -12,7 +12,7 @@ The game environment is implemented using the Pygame library. The game consists 
 
 Two reinforcement learning algorithms are implemented for training the AI agent:
 
-- **NEAT Algorithm (NeuroEvolution of Augmenting Topologies)**: This algorithm evolves neural networks to control the bird's actions (flap or not flap) based on the current game state. NEAT is a genetic algorithm that evolves neural network architectures and weights over multiple generations.
+- **[NEAT Algorithm](https://en.wikipedia.org/wiki/Neuroevolution_of_augmenting_topologies) (NeuroEvolution of Augmenting Topologies)**: This algorithm evolves neural networks to control the bird's actions (flap or not flap) based on the current game state. NEAT is a genetic algorithm that evolves neural network architectures and weights over multiple generations.
 
 - **Q-Learning**: An attempt has been made to implement Q-learning, but it is still a work in progress and has not been successfully implemented yet.
 
