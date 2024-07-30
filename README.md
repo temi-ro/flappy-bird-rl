@@ -29,19 +29,27 @@ Two reinforcement learning algorithms are implemented for training the AI agent:
 2. Run the script `main.py` with appropriate command-line arguments:
 
 ``` shell
-python gameNEAT.py [-h] [--config CONFIG] [--color COLOR] [--nGens NGENS]
-                   [--checkpoint CHECKPOINT] [--replay REPLAY]
+python gameNEAT.py [-h] [--config CONFIG] [--color COLOR] [--nGens NGENS] [--checkpoint CHECKPOINT] [--replay REPLAY]
 ```
 
 - `--config`: Path to the NEAT configuration file (default: `config-ff.txt`).
 - `--color`: Color of the bird (`random` or `red`) (default: `random`).
 - `--nGens`: Number of generations to run training (default: `100`).
-- `--checkpoint`: Checkpoint number to restore training from (default: `None`).
+- `--checkpoint`: Checkpoint path to restore training from (default: `None`).
 - `--replay`: Path to the genome file to replay (default: `None`).
+
+3. To close the window, press 'esc'.
+
+### _Note: To simply test my best model (without training) do:_
+``` shell
+python gameNEAT.py --replay good_bird.pickle
+```
+
 
 ## Work in Progress
 
 - The Q-learning algorithm is still a work in progress and has not been successfully implemented yet. Further work is needed to debug and refine the Q-learning implementation.
 - Additional optimizations and improvements may be made to enhance the performance and effectiveness of the NEAT algorithm.
+- Add a speed argument to vary the speed of the game
 
 Feel free to contribute to the project and experiment with different reinforcement learning algorithms to train the Flappy Bird AI agent!
