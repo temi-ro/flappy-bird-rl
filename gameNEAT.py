@@ -4,7 +4,6 @@ import neat
 import pickle
 import os
 import argparse
-from helper import plot
 
 # Size of the window
 WIDTH = 700
@@ -187,6 +186,7 @@ def eval_gen(genomes, config, stop=True):
     run = True
     clock = pygame.time.Clock()
     score = 0
+
     while run and len(birds) > 0:
         clock.tick(SPEED)
         WINDOW.fill(BLACK)
